@@ -1,0 +1,42 @@
+{
+  "name": "mesto-express-node",
+  "version": "1.0.0",
+  "description": "Interactive gallery on React JS with server on Express",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "cross-env NODE_ENV='production' node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "homepage": "/",
+  "main": "app.js",
+  "keywords": [
+    "node.js",
+    "express",
+    "react"
+  ],
+  "author": "Diana Vlasenkova",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "celebrate": "^13.0.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.5",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "validator": "^13.1.17",
+    "winston": "^3.3.3"
+  }
+}
