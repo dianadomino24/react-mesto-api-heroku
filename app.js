@@ -9,20 +9,19 @@ const { routerIndex } = require('./routes/index');
 const NotFoundError = require('./errors/NotFoundError');
 
 const app = express();
-const { PORT = 3001 } = process.env;
+const { PORT = 3001, MONGO_URL} = process.env;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb://localhost:27017/mestodb', {
+mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
 });
 
 const allowedOrigins = [
-  'https://dianadomino24.students.nomoreparties.space',
-  'https://www.dianadomino24.students.nomoreparties.space',
+  'https://github.com/dianadomino24',
 ];
 app.use(cors());
 
